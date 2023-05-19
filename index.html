@@ -6,19 +6,7 @@
         .tiny {
           font-size: 10px
         }
-        /*.last-compatible .last-compatible-info {
-            display: block;
-        }
-        .last-compatible .last-compatible-dash {
-            display: none;
-        }
-        .last-compatible.hide-compatible .last-compatible-info {
-            display: none;
-        }
-        .last-compatible.hide-compatible .last-compatible-dash {
-            display: block;
-        }*/
-        </style>
+         </style>
     </head>
     <script>
         function resetTable () {
@@ -38,7 +26,6 @@
             }
         }
         function showLastCompatibility(event) {
-            console.log(event.target.checked)
             const elements = document.getElementsByClassName('last-compatible')
             for(let i = 0; i<elements.length; i++) {
                 if(!event.target.checked) {
